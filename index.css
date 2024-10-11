@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'spartan',sans-serif;
+}
+body{
+    width: 100%;
+    max-width: 1440px;
+    background-color: hsl(222, 26%, 31%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 700;
+
+    
+}
+/*   toggle 2 desgin start */
+body.active1{
+    background-color:hsl(0, 0%, 90%);
+    
+}
+body.active1 .btn{
+    background-color:hsl(0, 5%, 81%);
+    border-radius: 10px;
+}
+body.active1 #screen{
+    background-color:hsl(0, 0%, 93%);
+    color: #111111c2;
+    font-weight: 700;
+    border-radius: 10px;
+}
+body.active1 h1,body.active1 .control p,body.active1 .right P {
+    color:#111111c2;
+}
+body.active1 button {
+    color: #111111c2;
+    }
+    body.active1 .del,body.active1 .reset{
+       background-color:hsl(185, 42%, 37%);
+       color: #fff;
+       box-shadow:0px 5px 0px hsl(185, 58%, 25%) ;
+    }
+    body.active1 .equal{
+      background-color:hsl(25, 98%, 40%);
+      box-shadow:0px 5px hsl(25, 99%, 27%) ;
+      color: #fff;
+      
+    }
+    body.active1 .control p{
+        text-transform: uppercase;
+    }
+    body.active1 .control .box{
+        background-color:hsl(0, 5%, 81%) ;
+    }
+    body.active1 .control #circle{
+      background-color:hsl(25, 98%, 40%);
+      left: 34%;
+
+    }
+    /*  toggle 2 desgin end */
+
+ 
+    /*  toggle 3 desgin end */
+    body.active2{
+        background-color:hsl(268, 75%, 9%);
+    }
+    body.active2 h1,body.active2 .control p,body.active2 .right P{
+        color: hsl(52, 100%, 62%);
+    } 
+    body.active2 #screen ,body.active2 .btn{
+        background-color: hsl(268, 71%, 12%);
+        color:hsl(52, 100%, 62%) ;
+
+    }
+    body.active2 button{
+        background-color:  hsl(281, 89%, 26%);
+        color:hsl(52, 100%, 62%) ;
+       box-shadow: 0px 5px 0px hsl(285, 91%, 52%)
+    }
+    body.active2 .reset , body.active2 .del{
+        background-color:hsl(268, 47%, 21%) ;
+        box-shadow: 0px 5px 0px hsl(290, 70%, 36%);
+    }
+    body.active2 .equal{
+        background-color:hsl(176, 100%, 44%) ;
+        box-shadow: 0px 5px 0px hsl(177, 92%, 70%);
+        color: #454a54;
+    }
+    body.active2 .control .box{
+        background-color:hsl(268, 71%, 12%);
+    }
+    body.active2 .control #circle{
+      background-color:hsl(176, 100%, 44%);
+
+    }
+   
+    /*  toggle 3 desgin end */
+
+    /*  toggle 1 desgin end */
+    
+    .title p{
+        font-weight: bold;
+    }
+    .toggle{
+        
+        display: flex;
+        justify-content: space-between;
+    }
+.right{
+    display: flex;
+    justify-content:flex-end ;
+}
+.toggle p{
+    margin: 0px 5px;
+    
+}
+h1, p{
+    color: #fff;
+}
+.control{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 5px;
+}
+.control .box{
+    width: 60px;
+    height: 15px;
+    background-color:hsl(224, 36%, 15%) ;
+    border-radius: 30px;
+    margin-left: 4px;
+    position: relative;
+}
+.control #circle{
+    width: 20px;
+    height:15px;
+    background-color: hsl(6, 63%, 50%);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    border-radius: 30px;
+    
+}
+.control p{ 
+    color: #fff;
+    cursor: pointer;
+    margin-right: 4px;
+}
+#screen{
+    width: 100%;
+    height: 130px;
+    text-align: right;
+    font-size: 32px;
+    background-color: hsl(224, 36%, 15%);
+    color: #fff;
+    border: none;
+    outline: none;
+}
+button{
+    width: 90px;
+    padding: 15px;
+    outline: none;
+    cursor: pointer;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0px 5px 0px hsl(28 ,16% ,65%);
+    margin: 10px 10px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #454a54;
+}
+.btn{
+    display: flex;
+    flex-flow: wrap;
+    width: 450px;
+    background-color: hsl(224, 36%, 15%);
+    padding: 10px 5px;
+    margin: 15px 0;font-weight: bold;
+    
+}
+.reset,.equal{
+    width: 200px;
+    color: #fff;
+}
+.reset{
+    background-color: hsl(244, 28%, 35%);
+    box-shadow: 0px 3px 0px hsl(224deg 28% 35%);
+}
+.equal{
+    background-color: hsl(6, 63%, 50%);
+    box-shadow: 0px 3px 0px hsl(6, 70% ,34%);
+}
+.del{
+    background-color: hsl(244, 28%, 35%);
+    box-shadow: 0px 3px 0px hsl(224deg 28% 35%);   
+    color: #fff;
+}
+
+/*  toggle 1 desgin end */
+@media screen and (max-width:375px) {
+   .container{
+    max-width: 350px;
+    max-height: 575px;
+   }
+   .btn{
+    width:100% ;
+   }
+   button{
+    width: 19%;
+    font-size: 29px;
+   }
+   .reset,.equal{
+    width: 44%;
+   }
+   .reset,.equal,.del{
+    font-size: 20px;
+   }
+}
